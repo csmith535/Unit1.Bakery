@@ -1,0 +1,78 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  min-height: 100vh; /*set min height to viewport height*/
+  /* using this to push footer to bottom */
+  display: flex;
+  flex-direction: column;
+}
+
+.brand {
+  background-color: maroon;
+  font-size: 250%;
+  font-weight: bold;
+  color: orange;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 0.2em;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4ch;
+  justify-content: space-around;
+  background-color: orange;
+  /* struggling to change text color */
+  width: 50vw;
+  margin: 0 auto; /* centers nav */
+  border-radius: 1em; /* round border */
+  padding: 0.3em;
+}
+
+a {
+  color: white; /* figured out how to change hyperlink colors */
+}
+
+main {
+  display: flex;
+  gap: 2em;
+  flex-grow: 1;
+}
+
+article {
+  flex-grow: 2;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: maroon;
+  color: orange;
+  margin: 1em;
+  padding: 1em;
+  border: 0.2em solid orange;
+  border-radius: 0.5em;
+  align-items: center;
+}
+/* ask how to scale font and boxes the same way, depending on viewport size */
+
+.testimonial {
+  background-color: bisque;
+  color: maroon;
+  padding: 0.5em 1em;
+  margin-bottom: 0.5em;
+  border-radius: 0.5em;
+  border: 0.15em solid orange;
+  font-style: italic;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-content: bottom;
+  background-color: orange;
+  color: maroon;
+  margin-bottom: 1em;
+  padding: 1em;
+}
